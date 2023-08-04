@@ -45,7 +45,7 @@ header {
     letter-spacing: 4px;
 }
 .time {
-    font-size:50px;
+    font-size:60px;
     border-left: 5px solid black;
     padding-left:15px;
 }
@@ -60,6 +60,7 @@ header {
     font-size:20px;
 }
 #searchIcon {
+    cursor: pointer;
     width: 40px;
     height: 40px;
     position: absolute;
@@ -78,10 +79,12 @@ main{
     
 }
 #temperature {
+    cursor:default;
     font-size:200px;
     border-bottom: 3px solid black;
 }
 .info p {
+    cursor:default;
     font-size: 35px;
     margin:10px;
 }
