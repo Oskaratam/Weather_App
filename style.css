@@ -11,7 +11,7 @@ body{
     position: relative;
     width:820px;
     height:950px;
-    background: linear-gradient(to top right,  rgb(121, 192, 255), 60%, rgb(255, 244, 85));
+    background: linear-gradient(to top right,  rgb(121, 192, 255), 45%, rgb(255, 244, 85));
     margin:20px auto;
     border-radius:10%;
 }
@@ -27,6 +27,19 @@ body{
     object-fit: cover;
     border-radius:10%;
     position: absolute;
+}
+.weather {
+    position:absolute;
+    height:638px;
+    width:820px;
+    display: none;
+}
+#rain {
+    height:800px;
+    width:820px;
+}
+.active {
+    display:block;
 }
 /*HEADER*/
 header {
@@ -67,6 +80,12 @@ header {
     top: 143px;
     left: 509px;
 }
+.error {
+    align-self:left;
+    font-size:20px;
+    color:red;
+    display:none;
+}
 
 /*MAIN*/
 main{
@@ -85,6 +104,6 @@ main{
 }
 .info p {
     cursor:default;
-    font-size: 35px;
+    font-size: 40px;
     margin:10px;
 }

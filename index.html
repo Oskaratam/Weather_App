@@ -8,24 +8,28 @@
 </head>
 <body>
     <div class="container">
+        <img id="clouds" class="weather" src="./img/clouds.png">
         <img class="bgImage" src="./img/beach.png">
         <div class="content">
 
             <header>
                 <div>
-                    <h2 id="placeName">Kyiv</h2>
-                    <span class="time" id="time"><b>23:40</b></span>
+                    <h2 id="placeName">Place</h2>
+                    <span class="time" id="time"><b>00:00</b></span>
                 </div>
                 <input maxlength="23" placeholder="Find place" name="Place" id="placeInput" class="placeInput" type="text">
+                <div class="error">
+                    <p>Invalid place</p>
+                </div>
                 <img id="searchIcon" src="./img/search.png" alt="search icon">
             </header>
 
             <main>
-                <p id="temperature">25°C</p>
+                <p id="temperature">0°C</p>
                 <div class="info">
-                    <p id="weather">Weather: sunny</p>
-                    <p id="humidity">Humidity: 10%</p>
-                    <p id="feelsLike">Feels like: 30°C</p>
+                    <p id="weather">Weather: </p>
+                    <p id="humidity">Humidity: </p>
+                    <p id="feelsLike">Feels like: </p>
                 </div>
             </main>
         </div>
