@@ -1,0 +1,87 @@
+* {
+    padding:0;
+    margin:0;
+}
+body{
+    background-color:rgb(30, 37, 37);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+}
+.container {
+    overflow:hidden;
+    position: relative;
+    width:820px;
+    height:950px;
+    background: linear-gradient(to top right,  rgb(121, 192, 255), 60%, rgb(255, 244, 85));
+    margin:20px auto;
+    border-radius:10%;
+}
+.content {
+    position: relative;
+    z-index: 1;
+}
+.bgImage {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius:10%;
+    position: absolute;
+}
+/*HEADER*/
+header {
+    display:grid;
+    width: 820px;
+    height:15%;
+    font-size:50px;
+    color:rgb(31, 31, 31);
+}
+:where(header) div{
+    justify-self:center;
+    margin-top: 10px;
+}
+#placeName {
+    display:inline;
+    letter-spacing: 4px;
+}
+.time {
+    font-size:50px;
+    border-left: 5px solid black;
+    padding-left:15px;
+}
+
+.placeInput{
+    width:300px;
+    height:40px;
+    margin: 30px 0 0 0;
+    justify-self:center;
+    border-radius: 10rem;
+    padding:10px;
+    font-size:20px;
+}
+#searchIcon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 143px;
+    left: 509px;
+}
+
+/*MAIN*/
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height:450px;
+
+    
+}
+#temperature {
+    font-size:200px;
+    border-bottom: 3px solid black;
+}
+.info p {
+    font-size: 35px;
+    margin:10px;
+}
